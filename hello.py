@@ -20,3 +20,7 @@ name = input("What's your name? ")
     # Print Function / Changing end and sep
     # print("Hello,", name, sep=' ')
 
+# Inner double quotes
+
+    # print('Hello, "friend"')
+    # print("Hello, \"friend\"")
