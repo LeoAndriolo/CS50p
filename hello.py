@@ -1,6 +1,10 @@
 # Ask user for their name
 name = input("What's your name? ").strip().title()
 
+# Split name
+first, last = name.split(" ")
+
+# Print welcoming
 print(f"Hello, {name}")
 
 # Say hello to user
@@ -38,3 +42,6 @@ print(f"Hello, {name}")
 
     # Strip + Capitalize
     # name = name.strip().title()
+
+    # Split
+    # first, last = name.split(" ")
