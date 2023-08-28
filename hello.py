@@ -1,5 +1,7 @@
 # Ask user for their name
-name = input("What's your name? ")
+name = input("What's your name? ").strip().title()
+
+print(f"Hello, {name}")
 
 # Say hello to user
 
@@ -24,3 +26,15 @@ name = input("What's your name? ")
 
     # print('Hello, "friend"')
     # print("Hello, \"friend\"")
+
+# Managing strings
+
+    # Remove white spaces
+    # name = name.strip()
+
+    # Capitalize string
+    # name = name.capitalize() / One word
+    # name = name.title() / Many words
+
+    # Strip + Capitalize
+    # name = name.strip().title()
