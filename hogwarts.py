@@ -16,13 +16,21 @@
 # students = ["Herminone", "Harry", "Ron","Draco"]
 # houses = ["Gryffindor","Gryffindor","Gryffindor","Slytherin"]
 
-students = {
-    "Hermione":"Gryffindor",
-    "Harry":"Gryffindor",
-    "Ron":"Gryffindor",
-    "Draco":"Slytherin"
-    }
+# students = {
+#     "Hermione":"Gryffindor",
+#     "Harry":"Gryffindor",
+#     "Ron":"Gryffindor",
+#     "Draco":"Slytherin"
+#     }
 
 # print(students["Hermione"])
-for student in students:
-    print(student, students[student], sep=" ")
+# for student in students:
+#     print(student, students[student], sep=" ")
+
+# More complex dictionary
+students = [
+    {"name":"Hermione", "house":"Gryffindor", "patronous":"Otter"},
+    {"name":"Harry", "house":"Gryffindor", "patronous":"Stag"},
+    {"name":"Ron", "house":"Gryffindor", "patronous":"Terrier"},
+    {"name":"Draco", "house":"Slytherin", "patronous": None}
+]
