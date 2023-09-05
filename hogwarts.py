@@ -34,3 +34,6 @@ students = [
     {"name": "Ron", "house": "Gryffindor", "patronous": "Terrier"},
     {"name": "Draco", "house": "Slytherin", "patronous": None}
 ]
+
+for student in students:
+    print(student["name"], student["house"], student["patronous"], sep=" ")
