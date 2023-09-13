@@ -1,25 +1,12 @@
 # Program to practice debbuging
 
-# Using functions
 def main():
-    # print_column(3)
-    # print_row(4)
-    print_square(3)
+    height = int(input("Height: "))
+    pyramid(height)
 
-# def print_column(height):
-#     # 1 Method
-#     # for _ in range(height):
-#     #     print("#")
+def pyramid(n):
+    for i in range(n):
+        print("#" * i)
 
-#     # 2 Method
-#     print("#\n" * height, end="")
-
-def print_row(width):
-    print("#" * width)
-
-def print_square(size):
-    for i in range(size):
-        print_row(size)
-
-
-main()
+if __name__ == "__main__":
+    main()
