@@ -1,4 +1,4 @@
-# Set 4 Class - Libraries
+# Set 4 Class - Libraries - Random library
 
 import random # Imports all functions of "random" library
 #from random import choice # Imports only "choice" function
