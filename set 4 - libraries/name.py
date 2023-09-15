@@ -2,4 +2,6 @@
 
 import sys
 
-sys.argv # Argument value
+# sys.argv # Argument value
+
+print("Hello, my name is", sys.argv[1])
