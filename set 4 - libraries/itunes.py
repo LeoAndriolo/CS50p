@@ -1,4 +1,4 @@
-# Set 4 Class - Libraries - API
+# Set 4 Class - Libraries - API's and JSON
 
 import requests
 import sys
