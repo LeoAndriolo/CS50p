@@ -6,7 +6,7 @@
     #         row = line.rstrip().split(",")
     #         print(f"{row[0]} is in {row[1]}")
 
-# Row by Row - Dict
+# Row by Row - Associated list
     # with open("students.csv") as file:
     #     for line in file:
     #         name, house = line.rstrip().split(",")
@@ -18,8 +18,11 @@ students = []
 with open("students.csv") as file:
     for line in file:
         name, house = line.rstrip().split(",")
-        students.append(f"{name} is in {house}")
+        student = {}
+        student["name"] = name
+        student["house"] = house
+        students.append(student)
 
 for student in sorted(students):
-    print(student)
+    print(f"{student['name']} is in {student['house']}")
 
