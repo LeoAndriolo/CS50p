@@ -12,7 +12,7 @@
     #         name, house = line.rstrip().split(",")
     #         print(f"{name} is in {house}")
 
-# Row by Row - Sorted
+# Row by Row - Sorted Dict
 students = []
 
 with open("students.csv") as file:
