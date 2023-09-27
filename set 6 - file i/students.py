@@ -41,3 +41,12 @@
         # for student in sorted(students, key=lambda student: student["name"]):
         #     print(f"{student['name']} is from {student['home']}")
 
+# Writting
+import csv
+
+name = input("What's your name? ")
+home = input("Where's your home? ")
+
+with open("students.csv", "a") as file:
+    writer = csv.writer(file)
+    writer.writerow([name, home])
