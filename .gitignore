@@ -159,3 +159,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 set 5 - unit test/__pycache__/test_calculator_v2.cpython-310-pytest-7.4.2.pyc
+set 6 - file i/names.txt
+set 6 - file i/students.csv
+.gitignore
+.gitignore
