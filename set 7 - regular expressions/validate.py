@@ -19,7 +19,7 @@ email = input("What's your email? ").strip()
     #     print("Invalid")
 
 # Regular expressions (re) library
-if re.search("@",email):
+if re.search(".+@.+",email):
     print("Valid")
 else:
     print("Invalid")
