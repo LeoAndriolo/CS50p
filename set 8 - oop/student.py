@@ -53,10 +53,6 @@
 
 class Student:
     def __init__(self, name, house):   # Initializes content of a method (function inside a class)
-        # if not name:
-        #     raise ValueError("Missing name")
-        # if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
-        #     raise ValueError("Invalid house")
         self.name = name
         self.house = house
     
@@ -83,7 +79,6 @@ class Student:
             raise ValueError("Invalid house")
         self._house = house   # _house -> Instance variable
     
-
     
 def main():
     student = get_student()
