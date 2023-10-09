@@ -20,13 +20,14 @@
 # OOP
 
 class Student:
-    def __init__(self, name, house):   # Initializes content of a method (function inside a class)
+    def __init__(self, name, house, patronus):   # Initializes content of a method (function inside a class)
         if not name:
             raise ValueError("Missing name")
         if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
             raise ValueError("Invalid house")
         self.name = name
         self.house = house
+        self.patronus = patronus
 
     def __str__(self):
         return f"{self.name} from {self.house}"
@@ -40,7 +41,8 @@ def main():
 def get_student():
     name = input("Name: ")
     house = input("House: ")
-    return Student(name, house)   # Constructor call
+    patronus = input("Patronus: ")
+    return Student(name, house, patronus)   # Constructor call
 
 if __name__ == "__main__":
     main()
