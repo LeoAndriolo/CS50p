@@ -21,24 +21,26 @@
 
 class Student:
     def __init__(self, name, house):   # Initializes content of a method (function inside a class)
+        if not name:
+            raise ValueError("Missing name")
+        if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
+            raise ValueError("Invalid house")
         self.name = name
         self.house = house
-    
 
-    
+    def __str__(self):
+        return f"{self.name} from {self.house}"
+        
 
 def main():
     student = get_student()
-    # if student["name"] == "Padma":
-    #     student["house"] = "Ravenclaw"
-    print(f"{student.name} from {student.house}")
+    print(student)
     
 
 def get_student():
     name = input("Name: ")
     house = input("House: ")
-    student = Student(name, house)   # Constructor call
-    return student   # Dicts support item assigment
+    return Student(name, house)   # Constructor call
 
 if __name__ == "__main__":
     main()
