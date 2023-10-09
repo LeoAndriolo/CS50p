@@ -20,7 +20,10 @@
 # OOP
 
 class Student:
-    ...
+    def __init__(self, name, house):   # Initializes content of a method (function inside a class)
+        self.name = name
+        self.house = house
+    
 
     
 
@@ -32,9 +35,9 @@ def main():
     
 
 def get_student():
-    student = Student()
-    student.name = input("Name: ")
-    student.house = input("House: ")
+    name = input("Name: ")
+    house = input("House: ")
+    student = Student(name, house)   # Constructor call
     return student   # Dicts support item assigment
 
 if __name__ == "__main__":
