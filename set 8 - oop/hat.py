@@ -2,9 +2,9 @@
 
 import random
 class Hat:
-    houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]
+    houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]   # Class variable
 
-    @classmethod
+    @classmethod    # Class method
     def sort(cls, name):
         print(name, "is in", random.choice(cls.houses))
 
